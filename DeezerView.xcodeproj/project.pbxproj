@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6644230C24ABC15700C2F31D /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644230B24ABC15700C2F31D /* ImageManager.swift */; };
+		6644230E24ABD13C00C2F31D /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644230D24ABD13C00C2F31D /* AlbumViewController.swift */; };
+		6644231124ABD3EC00C2F31D /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644230F24ABD3EC00C2F31D /* AlbumTableViewCell.swift */; };
+		6644231224ABD3EC00C2F31D /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6644231024ABD3EC00C2F31D /* AlbumTableViewCell.xib */; };
+		6644231424ABD5E000C2F31D /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644231324ABD5E000C2F31D /* SongViewController.swift */; };
+		6644231824ABDADC00C2F31D /* DataAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644231724ABDADC00C2F31D /* DataAlbum.swift */; };
+		6644231A24ABDE8400C2F31D /* SpecificAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644231924ABDE8400C2F31D /* SpecificAlbum.swift */; };
+		6644231F24ABE34500C2F31D /* SongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644231D24ABE34500C2F31D /* SongsTableViewCell.swift */; };
+		6644232024ABE34500C2F31D /* SongsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6644231E24ABE34500C2F31D /* SongsTableViewCell.xib */; };
+		6644232224ABEAD700C2F31D /* DataTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644232124ABEAD700C2F31D /* DataTracks.swift */; };
+		66489B0324AB7D3C0080F4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B0224AB7D3C0080F4C7 /* AppDelegate.swift */; };
+		66489B0524AB7D3C0080F4C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B0424AB7D3C0080F4C7 /* SceneDelegate.swift */; };
+		66489B0724AB7D3C0080F4C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B0624AB7D3C0080F4C7 /* ViewController.swift */; };
+		66489B0A24AB7D3C0080F4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66489B0824AB7D3C0080F4C7 /* Main.storyboard */; };
+		66489B0C24AB7D3D0080F4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66489B0B24AB7D3D0080F4C7 /* Assets.xcassets */; };
+		66489B0F24AB7D3D0080F4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66489B0D24AB7D3D0080F4C7 /* LaunchScreen.storyboard */; };
+		66489B1A24AB823B0080F4C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B1924AB823B0080F4C7 /* Constants.swift */; };
+		66489B1C24AB85090080F4C7 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B1B24AB85090080F4C7 /* Alert.swift */; };
+		66489B1E24AB85930080F4C7 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B1D24AB85930080F4C7 /* Artist.swift */; };
+		66489B2024AB87450080F4C7 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B1F24AB87450080F4C7 /* Album.swift */; };
+		66489B2224AB87B80080F4C7 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B2124AB87B80080F4C7 /* Song.swift */; };
+		66489B2524AB89C10080F4C7 /* cellTableArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B2324AB89C10080F4C7 /* cellTableArtist.swift */; };
+		66489B2624AB89C10080F4C7 /* cellTableArtist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66489B2424AB89C10080F4C7 /* cellTableArtist.xib */; };
+		66489B2A24AB91A50080F4C7 /* DataReceived.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B2924AB91A50080F4C7 /* DataReceived.swift */; };
+		66489B2C24AB935F0080F4C7 /* ArtistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66489B2B24AB935F0080F4C7 /* ArtistManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6644230B24ABC15700C2F31D /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		6644230D24ABD13C00C2F31D /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		6644230F24ABD3EC00C2F31D /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		6644231024ABD3EC00C2F31D /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
+		6644231324ABD5E000C2F31D /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		6644231724ABDADC00C2F31D /* DataAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAlbum.swift; sourceTree = "<group>"; };
+		6644231924ABDE8400C2F31D /* SpecificAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificAlbum.swift; sourceTree = "<group>"; };
+		6644231D24ABE34500C2F31D /* SongsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewCell.swift; sourceTree = "<group>"; };
+		6644231E24ABE34500C2F31D /* SongsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsTableViewCell.xib; sourceTree = "<group>"; };
+		6644232124ABEAD700C2F31D /* DataTracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTracks.swift; sourceTree = "<group>"; };
+		66489AFF24AB7D3C0080F4C7 /* DeezerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66489B0224AB7D3C0080F4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66489B0424AB7D3C0080F4C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66489B0624AB7D3C0080F4C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66489B0924AB7D3C0080F4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66489B0B24AB7D3D0080F4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66489B0E24AB7D3D0080F4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66489B1024AB7D3D0080F4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66489B1924AB823B0080F4C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66489B1B24AB85090080F4C7 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		66489B1D24AB85930080F4C7 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		66489B1F24AB87450080F4C7 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		66489B2124AB87B80080F4C7 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		66489B2324AB89C10080F4C7 /* cellTableArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTableArtist.swift; sourceTree = "<group>"; };
+		66489B2424AB89C10080F4C7 /* cellTableArtist.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellTableArtist.xib; sourceTree = "<group>"; };
+		66489B2924AB91A50080F4C7 /* DataReceived.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReceived.swift; sourceTree = "<group>"; };
+		66489B2B24AB935F0080F4C7 /* ArtistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66489AFC24AB7D3C0080F4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6644230A24ABC13800C2F31D /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				66489B2B24AB935F0080F4C7 /* ArtistManager.swift */,
+				6644230B24ABC15700C2F31D /* ImageManager.swift */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		66489AF624AB7D3C0080F4C7 = {
+			isa = PBXGroup;
+			children = (
+				66489B0124AB7D3C0080F4C7 /* DeezerView */,
+				66489B0024AB7D3C0080F4C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66489B0024AB7D3C0080F4C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66489AFF24AB7D3C0080F4C7 /* DeezerView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66489B0124AB7D3C0080F4C7 /* DeezerView */ = {
+			isa = PBXGroup;
+			children = (
+				6644230A24ABC13800C2F31D /* APIManagers */,
+				66489B1824AB80E00080F4C7 /* View */,
+				66489B1724AB80DA0080F4C7 /* Model */,
+				66489B0224AB7D3C0080F4C7 /* AppDelegate.swift */,
+				66489B0424AB7D3C0080F4C7 /* SceneDelegate.swift */,
+				66489B1624AB80CF0080F4C7 /* Controller */,
+				66489B0B24AB7D3D0080F4C7 /* Assets.xcassets */,
+				66489B0D24AB7D3D0080F4C7 /* LaunchScreen.storyboard */,
+				66489B1024AB7D3D0080F4C7 /* Info.plist */,
+			);
+			path = DeezerView;
+			sourceTree = "<group>";
+		};
+		66489B1624AB80CF0080F4C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66489B0624AB7D3C0080F4C7 /* ViewController.swift */,
+				6644230D24ABD13C00C2F31D /* AlbumViewController.swift */,
+				66489B2324AB89C10080F4C7 /* cellTableArtist.swift */,
+				66489B2424AB89C10080F4C7 /* cellTableArtist.xib */,
+				6644230F24ABD3EC00C2F31D /* AlbumTableViewCell.swift */,
+				6644231024ABD3EC00C2F31D /* AlbumTableViewCell.xib */,
+				6644231324ABD5E000C2F31D /* SongViewController.swift */,
+				6644231D24ABE34500C2F31D /* SongsTableViewCell.swift */,
+				6644231E24ABE34500C2F31D /* SongsTableViewCell.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66489B1724AB80DA0080F4C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66489B1924AB823B0080F4C7 /* Constants.swift */,
+				66489B1B24AB85090080F4C7 /* Alert.swift */,
+				66489B1D24AB85930080F4C7 /* Artist.swift */,
+				66489B1F24AB87450080F4C7 /* Album.swift */,
+				66489B2124AB87B80080F4C7 /* Song.swift */,
+				66489B2924AB91A50080F4C7 /* DataReceived.swift */,
+				6644231724ABDADC00C2F31D /* DataAlbum.swift */,
+				6644231924ABDE8400C2F31D /* SpecificAlbum.swift */,
+				6644232124ABEAD700C2F31D /* DataTracks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66489B1824AB80E00080F4C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66489B0824AB7D3C0080F4C7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66489AFE24AB7D3C0080F4C7 /* DeezerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66489B1324AB7D3D0080F4C7 /* Build configuration list for PBXNativeTarget "DeezerView" */;
+			buildPhases = (
+				66489AFB24AB7D3C0080F4C7 /* Sources */,
+				66489AFC24AB7D3C0080F4C7 /* Frameworks */,
+				66489AFD24AB7D3C0080F4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeezerView;
+			productName = DeezerView;
+			productReference = 66489AFF24AB7D3C0080F4C7 /* DeezerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66489AF724AB7D3C0080F4C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Damnjan Markovic";
+				TargetAttributes = {
+					66489AFE24AB7D3C0080F4C7 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 66489AFA24AB7D3C0080F4C7 /* Build configuration list for PBXProject "DeezerView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66489AF624AB7D3C0080F4C7;
+			productRefGroup = 66489B0024AB7D3C0080F4C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66489AFE24AB7D3C0080F4C7 /* DeezerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66489AFD24AB7D3C0080F4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66489B0F24AB7D3D0080F4C7 /* LaunchScreen.storyboard in Resources */,
+				66489B0C24AB7D3D0080F4C7 /* Assets.xcassets in Resources */,
+				66489B0A24AB7D3C0080F4C7 /* Main.storyboard in Resources */,
+				6644231224ABD3EC00C2F31D /* AlbumTableViewCell.xib in Resources */,
+				6644232024ABE34500C2F31D /* SongsTableViewCell.xib in Resources */,
+				66489B2624AB89C10080F4C7 /* cellTableArtist.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66489AFB24AB7D3C0080F4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66489B1E24AB85930080F4C7 /* Artist.swift in Sources */,
+				66489B0724AB7D3C0080F4C7 /* ViewController.swift in Sources */,
+				6644230E24ABD13C00C2F31D /* AlbumViewController.swift in Sources */,
+				66489B0324AB7D3C0080F4C7 /* AppDelegate.swift in Sources */,
+				6644230C24ABC15700C2F31D /* ImageManager.swift in Sources */,
+				6644231824ABDADC00C2F31D /* DataAlbum.swift in Sources */,
+				66489B0524AB7D3C0080F4C7 /* SceneDelegate.swift in Sources */,
+				66489B2224AB87B80080F4C7 /* Song.swift in Sources */,
+				66489B1C24AB85090080F4C7 /* Alert.swift in Sources */,
+				66489B2024AB87450080F4C7 /* Album.swift in Sources */,
+				6644232224ABEAD700C2F31D /* DataTracks.swift in Sources */,
+				66489B2C24AB935F0080F4C7 /* ArtistManager.swift in Sources */,
+				6644231A24ABDE8400C2F31D /* SpecificAlbum.swift in Sources */,
+				6644231F24ABE34500C2F31D /* SongsTableViewCell.swift in Sources */,
+				66489B1A24AB823B0080F4C7 /* Constants.swift in Sources */,
+				6644231124ABD3EC00C2F31D /* AlbumTableViewCell.swift in Sources */,
+				6644231424ABD5E000C2F31D /* SongViewController.swift in Sources */,
+				66489B2A24AB91A50080F4C7 /* DataReceived.swift in Sources */,
+				66489B2524AB89C10080F4C7 /* cellTableArtist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66489B0824AB7D3C0080F4C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66489B0924AB7D3C0080F4C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66489B0D24AB7D3D0080F4C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66489B0E24AB7D3D0080F4C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66489B1124AB7D3D0080F4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66489B1224AB7D3D0080F4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66489B1424AB7D3D0080F4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WKY7HZZY9M;
+				INFOPLIST_FILE = DeezerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damnjan.DeezerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66489B1524AB7D3D0080F4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WKY7HZZY9M;
+				INFOPLIST_FILE = DeezerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.damnjan.DeezerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66489AFA24AB7D3C0080F4C7 /* Build configuration list for PBXProject "DeezerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66489B1124AB7D3D0080F4C7 /* Debug */,
+				66489B1224AB7D3D0080F4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66489B1324AB7D3D0080F4C7 /* Build configuration list for PBXNativeTarget "DeezerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66489B1424AB7D3D0080F4C7 /* Debug */,
+				66489B1524AB7D3D0080F4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66489AF724AB7D3C0080F4C7 /* Project object */;
+}
