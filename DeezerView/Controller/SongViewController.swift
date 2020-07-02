@@ -10,6 +10,7 @@ import UIKit
 
 class SongViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableViewSongs: UITableView!
     @IBOutlet weak var lblAlbumName: UILabel!
     var album: Album!
@@ -21,9 +22,12 @@ class SongViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ovde")
+        
         lblAlbumName.text = album.title
         tableViewSongs.delegate = self
         tableViewSongs.dataSource = self
+        
         tableViewSongs.register(UINib(nibName: Constants.cellTableSongs, bundle: nil), forCellReuseIdentifier: Constants.reusableCellSongs)
         downloadSongs {
             self.tableViewSongs.reloadData()

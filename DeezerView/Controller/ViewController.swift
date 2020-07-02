@@ -11,44 +11,66 @@ import UIKit
 class ViewController: UIViewController {
 
 
+    @IBOutlet weak var lblSelectedSearch: UILabel!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var imageTitle: UIImageView!
-    @IBOutlet weak var tfArtist: UITextField!
+//    @IBOutlet weak var tfArtist: UITextField!
     @IBOutlet weak var tableViewArtists: UITableView!
     var artistManager = ArtistManager()
     var artistList = [Artist]()
     var artistsNamesList = [String]()
+    var typedIn = String()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tfArtist.addTarget(self, action: #selector(searchRecords(_ :)), for: .editingChanged)
+        view.backgroundColor = .darkText
+        
         artistManager.delegate = self
+        self.searchBar.delegate = self
         tableViewArtists.dataSource = self
         tableViewArtists.delegate = self
         tableViewArtists.register(UINib(nibName: Constants.cellTableArtist, bundle: nil), forCellReuseIdentifier: Constants.reusableCellArtist)
+        setLabelSearchSearchBar()
+//        self.searchBar.endEditing(true)
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        view.backgroundColor = .black
+    }
+
+    func setLabelSearchSearchBar(){
+        lblSelectedSearch.text = "     🎤     ARTISTS"
+        lblSelectedSearch.textColor = .white
+        self.searchBar.barTintColor = .white
+    
     }
     
 
-  
-    @objc func searchRecords(_ textField: UITextField) {
-    self.artistList.removeAll()
-        if let artist = tfArtist.text {
-            artistManager.getArtists(artistName: artist)
-            tableViewArtists.reloadData()
-        }
-   }
-    
-    
-    @IBAction func btnFetchArtist(_ sender: UIButton) {
-        if let artist = tfArtist.text {
-            artistManager.getArtists(artistName: artist)
-            
-            tableViewArtists.reloadData()
-        }
-    }
+
 }
 
+extension ViewController: UISearchBarDelegate, UISearchDisplayDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+          self.searchBar.endEditing(true)
+    }
+    
 
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchBar.text!)
+        if let artist = searchBar.text {
+            artistManager.getArtists(artistName: artist)
+
+        }
+    }
+    
+
+    
+
+    
+    
+}
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,7 +79,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.reusableCellArtist, for: indexPath) as! cellTableArtist
-        cell.lblArtistCell.text = artistList[indexPath.row].name
+
+        cell.lblArtistCell.text = "  \(artistList[indexPath.row].name.capitalized)"
         ImageManager.getImage( artistList[indexPath.row].picture){(result) in switch result {
                 case.success(let data):
                     let image = UIImage(data: data)
@@ -71,15 +94,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Constants.segueToAlbums, sender: self)
+        performSegue(withIdentifier: Constants.segueToAlbumsCollecitons, sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? AlbumViewController {
+        if let destination = segue.destination as? AlbumsCollectionViewController {
             destination.artist = artistList[(tableViewArtists.indexPathForSelectedRow?.row)!]
             
         }
         
     }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: Constants.segueToAlbums, sender: self)
+//    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? AlbumViewController {
+//            destination.artist = artistList[(tableViewArtists.indexPathForSelectedRow?.row)!]
+//
+//        }
+//
+//    }
 
     
 }

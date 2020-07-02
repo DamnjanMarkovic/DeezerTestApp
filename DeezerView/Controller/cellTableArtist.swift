@@ -14,6 +14,7 @@ class cellTableArtist: UITableViewCell {
     @IBOutlet weak var imageArtistCell: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = .darkText
        
     }
 

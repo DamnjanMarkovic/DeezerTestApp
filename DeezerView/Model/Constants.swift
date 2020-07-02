@@ -17,7 +17,7 @@ struct Constants {
 //    static let deezerURLSongs = "https://api.deezer.com/album/"                  //  + idAlbum
 //    static let deezerURLArtistPicture = "http://api.deezer.com/artist/"         //  + idArtist + /image
     
-    
+    static let segueToAlbumsCollecitons = "segueToAlbumsColections"
     static let segueToAlbums = "segueToAlbums"
     static let segueToSongs = "segueToSongs"
     
