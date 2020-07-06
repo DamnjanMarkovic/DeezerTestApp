@@ -14,7 +14,8 @@ struct Song: Decodable {
     let id: Int
     let title: String
     let link: String
-
+    let duration: Int
+    let preview: String
 
 }
 

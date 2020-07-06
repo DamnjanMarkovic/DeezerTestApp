@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ArtistViewController: UIViewController {
 
 
     @IBOutlet weak var lblSelectedSearch: UILabel!
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UISearchBarDelegate, UISearchDisplayDelegate {
+extension ArtistViewController: UISearchBarDelegate, UISearchDisplayDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
           self.searchBar.endEditing(true)
@@ -72,24 +72,24 @@ extension ViewController: UISearchBarDelegate, UISearchDisplayDelegate {
     
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArtistViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.artistList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.reusableCellArtist, for: indexPath) as! cellTableArtist
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.reusableCellArtist, for: indexPath) as! CellTableArtist
 
         cell.lblArtistCell.text = "  \(artistList[indexPath.row].name.capitalized)"
         ImageManager.getImage( artistList[indexPath.row].picture){(result) in switch result {
-                case.success(let data):
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        cell.imageArtistCell.image = image
-                     }
-                case.failure( _):
-                    print("nije stigla slika")
-                }
+        case.success(let data):
+            let image = UIImage(data: data)
+            DispatchQueue.main.async {
+                cell.imageArtistCell.image = image
+            }
+        case.failure( _):
+            print("nije stigla slika")
+            }
         }
         return cell
     }
@@ -117,7 +117,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension ViewController: ArtistManagerDelegate {
+extension ArtistViewController: ArtistManagerDelegate {
     func didUpdateArtists(_ artistManager: ArtistManager, artists artist: [Artist]) {
        
         DispatchQueue.main.async {

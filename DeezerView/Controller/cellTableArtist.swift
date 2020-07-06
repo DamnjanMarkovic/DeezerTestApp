@@ -8,7 +8,7 @@
 
 import UIKit
 
-class cellTableArtist: UITableViewCell {
+class CellTableArtist: UITableViewCell {
 
     @IBOutlet weak var lblArtistCell: UILabel!
     @IBOutlet weak var imageArtistCell: UIImageView!

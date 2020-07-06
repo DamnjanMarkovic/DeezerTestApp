@@ -24,12 +24,17 @@ struct ImageManager: Decodable {
       let session = URLSession.shared
       session.dataTask(with: request) { (data, response, error) in
           if error == nil {
-              completed(.success(data!))
+            DispatchQueue.main.async {
+                completed(.success(data!))
+            }
+            
           }
       }.resume()
        
     }
-    
-    
 }
+
+
+    
+
 
